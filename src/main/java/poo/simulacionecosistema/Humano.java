@@ -12,7 +12,7 @@ public class Humano extends Especie {
 
     public Humano(int poblacion) {
         super("Humano", poblacion, TipoEspecie.HUMANO); // riesgo bajo por defecto
-    }
+    } 
 
 
 
