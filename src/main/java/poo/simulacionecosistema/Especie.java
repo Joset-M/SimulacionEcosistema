@@ -37,4 +37,13 @@ public class Especie {
         }
         return extinta;
     }
+    
+    public String getNombre() {
+        return nombre;
+    }
+    
+    @Override
+    public String toString() {
+        return "Especie: " + nombre + " | Población: " + poblacion + " | Extinta: " + (extinta ? "Sí" : "No");
+    }
 }
