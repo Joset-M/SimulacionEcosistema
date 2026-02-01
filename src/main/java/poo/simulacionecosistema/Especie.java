@@ -23,7 +23,6 @@ public class Especie {
 
     public void aumentarPoblacion(int cantidad){
         poblacion += cantidad;
-        verificarExtincion();
     }
     
     public void disminuirPoblacion(int cantidad) {

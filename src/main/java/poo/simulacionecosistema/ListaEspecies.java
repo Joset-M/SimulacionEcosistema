@@ -78,28 +78,4 @@ public class ListaEspecies {
             T = T.LIGA;
         }
     }
-
-    // Ordenar por nivel de riesgo (sin privilegios)
-    public void ordenarPorRiesgo() {
-        if (P == null || P.LIGA == null) return;
-
-        boolean cambio;
-        do {
-            cambio = false;
-            NodoEspecie T = P;
-
-            while (T.LIGA != null) {
-                if (T.especie.getNivelRiesgo() <
-                    T.LIGA.especie.getNivelRiesgo()) {
-
-                    Especie aux = T.especie;
-                    T.especie = T.LIGA.especie;
-                    T.LIGA.especie = aux;
-
-                    cambio = true;
-                }
-                T = T.LIGA;
-            }
-        } while (cambio);
-    }
 }
