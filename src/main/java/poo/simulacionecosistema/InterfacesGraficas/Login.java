@@ -135,11 +135,11 @@ public class Login extends javax.swing.JFrame {
         // 4. Resultado de la validación
         if (accesoConcedido) {
             JOptionPane.showMessageDialog(this, "¡Bienvenido al sistema!");
-            this.dispose();
 
             // Aquí podrías abrir la siguiente ventana:
-            // new MenuPrincipal().setVisible(true);
-            // this.dispose();
+            MenuPrincipal menu = new MenuPrincipal();
+    menu.setVisible(true);
+            this.dispose();
         } else {
             JOptionPane.showMessageDialog(this, "Usuario o contraseña incorrectos", "Error", JOptionPane.ERROR_MESSAGE);
         }
